@@ -180,7 +180,7 @@ if (fundoCor && fundoPrata && fundoGrafite) {
 // Responsividade Mobile
 const menuBurger = document.querySelector('.menu-burger');
 const nav = document.querySelector('nav');
-const navMenu = document.querySelector('#nav-menu');
+const navMenu = document.querySelector('#navMenu');
 
 menuBurger.addEventListener('click', () => {
   menuBurger.classList.toggle('active');
