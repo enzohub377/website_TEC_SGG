@@ -1,94 +1,74 @@
-📱 Samsung Store – Landing Page
+# 📱 SSG — E-Commerce Tech Experience
 
-Este projeto é uma landing page inspirada no site oficial da Samsung, desenvolvida com HTML, CSS e JavaScript, com foco em layout moderno, responsividade e experiência do usuário.
+Uma landing page responsiva e moderna inspirada em e-commerces de tecnologia, desenvolvida com **HTML5, CSS3 e JavaScript puro**. O projeto conta com alternância de temas (Dark/Light), visualização interativa de produtos com alteração dinâmica de cores, layouts em Grid/Flexbox e suporte completo para dispositivos móveis.
 
-O objetivo do projeto é praticar desenvolvimento web front-end, organização de layout, navegação por âncoras e efeitos visuais interativos.
+## 🚀 Funcionalidades
 
-🚀 Funcionalidades
+* 🌓 **Tema Claro / Escuro (Dark/Light Mode):** Suporte nativo com persistência da preferência do usuário via `localStorage`.
 
-✅ Menu de navegação responsivo (menu hambúrguer para mobile)
+* 🎨 **Seletor de Cores Interativo:** Troca de modelos do *Galaxy Watch* com efeitos dinâmicos de transição (`scale`, `opacity`) e rótulo explicativo (`tooltip`).
 
-✅ Seção de novidades com destaque para produto principal
+* ✨ **Efeitos Visuais Modernos:** Uso de `backdrop-filter` (Efeito Glassmorphism), sombras sutis e animações CSS no hover dos produtos.
 
-✅ Troca de cores do produto (Prata e Grafite)
+## 🛠️ Tecnologias Utilizadas
 
-✅ Categorias organizadas por seções:
+* **HTML5:** Estruturação semântica da página.
 
-Mobile
+* **CSS3:**
 
-TV & AV
+  * CSS Grid & Flexbox para alinhamentos.
 
-Computadores e Monitores
+  * Variáveis e seletores condicionais para alternância de temas.
 
-Acessórios
+  * Animações, transições e regras de responsividade (`@media queries`).
 
-✅ Cards com efeito overlay ao passar o mouse
+* **JavaScript (ES6+):**
 
-✅ Layout moderno e inspirado em e-commerce
+  * Manipulação de DOM e escutadores de eventos (`addEventListener`).
 
-✅ Footer completo, com links institucionais e informações do autor
+  * Lógica para troca de temas e interação com produtos.
 
-🛠️ Tecnologias Utilizadas
+  * Persistência de dados com `localStorage`.
 
-HTML5 – Estrutura do site
+* **Google Fonts:** Tipografias *Poppins*, *Michroma* e *Roboto*.
 
-CSS3 – Estilização, layout responsivo e efeitos visuais
+## 📂 Estrutura de Arquivos
 
-JavaScript (Vanilla) – Interações dinâmicas (menu mobile e troca de imagens)
+```
+├── assets/                  # Imagens e vetores do projeto (Logos, SVGs e Fotos de Produtos)
+├── index.html               # Estrutura HTML principal do site
+├── style.css                # Estilização global, temas e responsividade
+├── script.js                # Lógica de interação, temas e seletor de cores
+└── README.md                # Documentação do repositório
 
-Google Fonts – Poppins, Roboto e Edu NSW ACT Cursive
+```
 
-📂 Estrutura do Projeto
-📁 projeto-samsung
-│── index.html
-│── style.css
-│── script.js
-│
-├── 📁 Imagens
-│   ├── Mobile1.png
-│   ├── TV-AV1.png
-│   ├── Acessórios1.png
-│   └── ...
+## 🔧 Como Executar o Projeto
 
-🧠 Conceitos Aplicados
+1. **Clone o repositório:**
 
-Semântica HTML
+   ```
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   
+   ```
 
-Navegação por âncoras (#id)
+2. **Navegue até o diretório:**
 
-Layout em cards
+   ```
+   cd seu-repositorio
+   
+   ```
 
-Efeito hover com overlay
+3. **Abra o arquivo `index.html`:**
 
-Responsividade
+   * Você pode abrir diretamente em seu navegador preferido dando dois cliques no arquivo `index.html`.
 
-Organização visual inspirada em sites profissionais
+   * Ou utilize a extensão **Live Server** no VS Code para uma experiência de desenvolvimento em tempo real.
 
-Boas práticas de estrutura front-end
+## 💡 Próximas Melhorias (Roadmap)
 
-🎯 Objetivo do Projeto
+* \[ \] Correção de links e direcionamento das categorias de produtos.
 
-Este projeto foi criado com fins educacionais, visando:
+* \[ \] Implementação de carrinho de compras básico com cálculo de valor.
 
-Aprimorar habilidades em desenvolvimento web
-
-Praticar construção de interfaces modernas
-
-Simular um site real de e-commerce
-
-Evoluir no uso de HTML, CSS e JavaScript puro
-
-⚠️ Este projeto não possui fins comerciais e não é afiliado oficialmente à Samsung.
-
-👨‍💻 Autor
-
-Enzo Miguel P. da Silva
-📧 Email: piresenzo75@gmail.com
-
-📱 Telefone: (19) 98869-7421
-
-🔗 Redes sociais disponíveis no rodapé do site
-
-📄 Licença
-
-Este projeto é de uso livre para estudo e aprendizado.
+* \[ \] Integração de filtro de busca funcional para os produtos listados.
