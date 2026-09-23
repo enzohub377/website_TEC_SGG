@@ -177,23 +177,26 @@ if (fundoCor && fundoPrata && fundoGrafite) {
   });
 }
 
-// Responsividade Mobile
 const menuBurger = document.querySelector('.menu-burger');
 const nav = document.querySelector('nav');
 const navMenu = document.querySelector('#navMenu');
 
-menuBurger.addEventListener('click', () => {
-  menuBurger.classList.toggle('active');
-  nav.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+if (menuBurger) {
+  menuBurger.addEventListener('click', () => {
+    menuBurger.classList.toggle('active');
+    nav.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+}
 
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    menuBurger.classList.remove('active');
-    nav.classList.remove('active');
-    navMenu.classList.remove('active');
+    if (menuBurger) {
+      menuBurger.classList.remove('active');
+      nav.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
   });
 });
