@@ -171,6 +171,7 @@ body.light-theme #navMenu {
 
 body.light-theme .nav-link {
   color: #000000;
+  border: none;
 }
 
 body.light-theme .nav-link::before {
@@ -718,6 +719,7 @@ footer {
   header {
     justify-content: space-between;
     padding: 0 15px;
+    border-radius: 0;
   }
 
   .container-input {
@@ -762,8 +764,8 @@ footer {
     top: 0;
     right: -100%;
     width: 75%;
-    height: 100vh;
-    padding-top: 80px;
+    height: 100dvh;
+    padding-top: 100px;
     transition: right 0.4s ease;
   }
 
@@ -775,10 +777,25 @@ footer {
     flex-direction: column;
     gap: 20px;
     height: 100%;
-    border-radius: 20px 0 0 20px;
-    border-right: none;
+    border-radius: 20px 0 0 0;
+    border-left: 1px solid #888;
     background-color: rgba(0, 0, 0, 0.95);
     padding: 30px 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  body.light-theme #navMenu {
+    border-color: #1a1a1a;
+  }
+
+  .nav-link {
+    border: none;
+  }
+
+  .nav-link:hover {
+    color: #5b6166;
+    border: none;
   }
 
   #hero {
@@ -876,6 +893,17 @@ footer {
     grid-template-columns: 1fr;
     gap: 25px;
     padding: 15px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 932px) {
+  nav {
+    font-size: 15px;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    justify-content: center;
   }
 }
 
